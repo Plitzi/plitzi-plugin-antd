@@ -35,7 +35,7 @@ const AntdThemeProvider = forwardRef((props, ref) => {
     }
 
     return theme;
-  }, []);
+  }, [theme]);
 
   return (
     <RootElement

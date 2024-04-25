@@ -11,7 +11,7 @@ import './Assets/index.scss';
 
 const emptyObject = {};
 
-const AntdThemeProvider = forwardRef((props, ref) => {
+const Antd = forwardRef((props, ref) => {
   const { className = '', children, internalProps = emptyObject, theme = emptyObject } = props;
   const {
     utils: { getWindow }
@@ -41,7 +41,7 @@ const AntdThemeProvider = forwardRef((props, ref) => {
     <RootElement
       ref={ref}
       internalProps={internalProps}
-      className={classNames('plitzi-component__antd-theme-provider', className)}
+      className={classNames('plitzi-component__antd', className)}
     >
       {!head && <div>Head not found</div>}
       {head && (
@@ -53,11 +53,11 @@ const AntdThemeProvider = forwardRef((props, ref) => {
   );
 });
 
-AntdThemeProvider.propTypes = {
+Antd.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   internalProps: PropTypes.object,
   theme: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 };
 
-export default AntdThemeProvider;
+export default Antd;

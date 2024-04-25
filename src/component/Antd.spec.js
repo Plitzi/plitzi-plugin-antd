@@ -4,15 +4,15 @@ import { render } from '@testing-library/react';
 import { PlitziServiceProvider } from '@plitzi/plitzi-sdk';
 
 // Relatives
-// import AntdThemeProvider from './AntdThemeProvider';
+// import Antd from './Antd';
 
-describe('AntdThemeProvider', () => {
+describe('Antd', () => {
   it('should render successfully', () => {
     const ref = { current: null };
 
     const BaseElement = render(
       <PlitziServiceProvider value={{ settings: { previewMode: true } }}>
-        {/* <AntdThemeProvider ref={ref} /> */}
+        {/* <Antd ref={ref} /> */}
       </PlitziServiceProvider>
     );
 

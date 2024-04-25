@@ -1,4 +1,4 @@
 // Relatives
-import AntdThemeProvider from './component';
+import Antd from './component';
 
-export default AntdThemeProvider;
+export default Antd;

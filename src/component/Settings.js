@@ -16,7 +16,7 @@ const Settings = props => {
       </div>
       <div className="flex flex-col w-full px-4 py-2">
         <label>Theme</label>
-        <TextArea value={theme} onChange={handleChangeTheme} inputClassName="rounded" />
+        <TextArea value={theme} onChange={handleChangeTheme} className="rounded" />
       </div>
     </div>
   );

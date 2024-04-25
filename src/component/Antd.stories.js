@@ -4,13 +4,13 @@ import noop from 'lodash/noop';
 import PlitziSdk, { PlitziServiceProvider } from '@plitzi/plitzi-sdk';
 
 // Relatives
-import AntdThemeProvider from './AntdThemeProvider';
+import Antd from './Antd';
 import Settings from './Settings';
 
 export default {
-  title: 'Example/AntdThemeProvider',
+  title: 'Example/Antd',
   decorators: [],
-  component: AntdThemeProvider,
+  component: Antd,
   argTypes: {}
 };
 
@@ -45,8 +45,8 @@ const schema = {
         content: 'Testing'
       },
       definition: {
-        label: 'AntdThemeProvider',
-        type: 'antdThemeProvider',
+        label: 'Antd Provider',
+        type: 'antd',
         description: '',
         parentId: '5f544375ced80ed16f382b7b',
         styleSelectors: {
@@ -61,8 +61,8 @@ const schema = {
 export const WithHoc = () => (
   <PlitziSdk offlineMode offlineData={{ schema }}>
     <PlitziSdk.Plugin
-      renderType="antdThemeProvider"
-      component={AntdThemeProvider}
+      renderType="antd"
+      component={Antd}
       assets={[
         {
           type: 'text/css',
@@ -77,8 +77,8 @@ export const WithHoc = () => (
 export const WithHocNoPreview = () => (
   <PlitziSdk offlineMode offlineData={{ schema }} previewMode={false}>
     <PlitziSdk.Plugin
-      renderType="antdThemeProvider"
-      component={AntdThemeProvider}
+      renderType="antd"
+      component={Antd}
       assets={[
         {
           type: 'text/css',
@@ -92,7 +92,7 @@ export const WithHocNoPreview = () => (
 
 export const WithHocNoIframe = () => (
   <PlitziSdk offlineMode renderMode="raw" offlineData={{ schema }}>
-    <PlitziSdk.Plugin renderType="antdThemeProvider" component={AntdThemeProvider} />
+    <PlitziSdk.Plugin renderType="antd" component={Antd} />
   </PlitziSdk>
 );
 
@@ -106,7 +106,7 @@ export const ComponentRender = () => {
         utils: {}
       }}
     >
-      <AntdThemeProvider ref={ref} />
+      <Antd ref={ref} />
     </PlitziServiceProvider>
   );
 };

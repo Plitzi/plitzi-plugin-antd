@@ -1,9 +1,9 @@
 {
-  "antdThemeProvider": {
+  "antd": {
     "attributes": {},
     "definition": {
-      "label": "Antd Theme Provider",
-      "type": "antdThemeProvider",
+      "label": "Antd Provider",
+      "type": "antd",
       "bindings": {},
       "styleSelectors": {
         "base": ""
@@ -28,7 +28,7 @@
       ]
     },
     "defaultStyle": {
-      "name": "Antd Theme Provider",
+      "name": "Antd Provider",
       "displayMode": "desktop",
       "style": {
         "base": {

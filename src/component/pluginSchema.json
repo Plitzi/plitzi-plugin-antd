@@ -34,5 +34,41 @@
         "base": {}
       }
     }
+  },
+  "antdButton": {
+    "attributes": {},
+    "definition": {
+      "label": "Antd Button",
+      "type": "antdButton",
+      "bindings": {},
+      "styleSelectors": {
+        "base": ""
+      },
+      "items": []
+    },
+    "builder": {
+      "canDelete": true,
+      "canSelect": true,
+      "canDragDrop": true,
+      "canMove": true,
+      "canTemplate": true,
+      "itemsAllowed": [],
+      "itemsNotAllowed": []
+    },
+    "bindingsAllowed": {
+      "attributes": [{ "path": "intent", "label": "Intent" }],
+      "style": [],
+      "initialState": [
+        { "path": "visibility", "label": "Visibility" },
+        { "path": "styleSelectors.base", "label": "Selector - Base" }
+      ]
+    },
+    "defaultStyle": {
+      "name": "Antd Button",
+      "displayMode": "desktop",
+      "style": {
+        "base": {}
+      }
+    }
   }
 }

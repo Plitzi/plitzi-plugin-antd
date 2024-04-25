@@ -3,6 +3,8 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import noop from 'lodash/noop';
 
+const emptyObject = {};
+
 const Settings = props => {
   const { intent = '', uiComponents = emptyObject, onUpdate = noop } = props;
   const { Select } = uiComponents;

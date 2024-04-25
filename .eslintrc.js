@@ -32,7 +32,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [['@plitzi/plitzi-ui', path.resolve('./node_modules/@plitzi/plitzi-ui/dist/components')]],
+        map: [],
         extensions: ['.ts', '.js', '.jsx', '.json', '.stores.js']
       }
     }

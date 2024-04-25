@@ -2,28 +2,40 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import noop from 'lodash/noop';
-import TextArea from '@plitzi/plitzi-ui/TextArea';
+
+const emptyObject = {};
 
 const Settings = props => {
-  const { theme = '', onUpdate = noop } = props;
+  const { theme = '', uiComponents = emptyObject, onUpdate = noop } = props;
+  const { CodeMirror } = uiComponents;
 
-  const handleChangeTheme = useCallback(e => onUpdate('theme', e.target.value), [onUpdate]);
+  const handleChangeTheme = useCallback(value => onUpdate('theme', value), [onUpdate]);
 
   return (
     <div className="flex flex-col">
-      <div className="bg-[#1A2835] px-4 py-2 flex items-center justify-center">
+      <div className="bg-blue-400 px-4 py-2 flex items-center justify-center">
         <h1 className="text-white m-0">Antd Theme Provider Settings</h1>
       </div>
-      <div className="flex flex-col w-full px-4 py-2">
-        <label>Theme</label>
-        <TextArea value={theme} onChange={handleChangeTheme} className="rounded" />
-      </div>
+      {CodeMirror && (
+        <div className="flex flex-col w-full px-4 py-2">
+          <label>Theme</label>
+          <CodeMirror
+            className="min-h-[250px] rounded"
+            value={theme}
+            theme="dark"
+            mode="json"
+            lineWrapping
+            onChange={handleChangeTheme}
+          />
+        </div>
+      )}
     </div>
   );
 };
 
 Settings.propTypes = {
   theme: PropTypes.string,
+  uiComponents: PropTypes.object,
   onUpdate: PropTypes.func
 };
 

@@ -4593,15 +4593,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@icons/material@npm:^0.2.4":
-  version: 0.2.4
-  resolution: "@icons/material@npm:0.2.4"
-  peerDependencies:
-    react: "*"
-  checksum: 24baa360cb83f7e1a9e6784ac11185d57eb895b0efd3070ec915693378330f35ff9feb248f650b9649fa3e1045601286585dc05795a4c734d4849b33900351ee
-  languageName: node
-  linkType: hard
-
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -5122,7 +5113,6 @@ __metadata:
     "@babel/preset-react": ^7.24.1
     "@plitzi/plitzi-cli": ^0.0.2
     "@plitzi/plitzi-sdk": ^0.21.1
-    "@plitzi/plitzi-ui": ^0.0.3
     "@plitzi/plitzi-webpack": ^0.2.0
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.11
     "@storybook/addon-essentials": ^8.0.9
@@ -5210,24 +5200,6 @@ __metadata:
     react-router-dom: ^6.22.3
     twig: ^1.17.1
   checksum: c27bedb58ed570ba349f6a5d7785c9a5360ff43c8e7c9fa36d8930925342cb9ded92182c85cccd8616ef611e18ea0d765778a71f7cf5afee796d3ff4e5b265b9
-  languageName: node
-  linkType: hard
-
-"@plitzi/plitzi-ui@npm:^0.0.3":
-  version: 0.0.3
-  resolution: "@plitzi/plitzi-ui@npm:0.0.3::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40plitzi%2Fplitzi-ui%2F0.0.3%2Fb9d4301f7506f35fc242c069be56aa1afb6efcc6"
-  dependencies:
-    axios: ^1.1.3
-    classnames: ^2.3.2
-    lodash: ^4.17.21
-    moment: ^2.29.4
-    react: ^18.2.0
-    react-color: ^2.19.3
-    react-dom: ^18.2.0
-    react-moment: ^1.1.2
-    react-router-dom: ^6.4.3
-    tinycolor2: ^1.4.2
-  checksum: c4689c3d7db152455db89763f4f8cc065768b7b9c0af2e1d94bfda2e6043a3dd88077e9c395c71e4e5b5fd428cfb04bcd3f1da50e034674962a3adce8e6e3374
   languageName: node
   linkType: hard
 
@@ -5480,13 +5452,6 @@ __metadata:
   version: 1.15.3
   resolution: "@remix-run/router@npm:1.15.3"
   checksum: 9e70bd334d99fdf9285f0885c10353d7e25f66369080f551d997e3ce204e1af3a12d6f12b091f94a2dc9a54c80598bbe3c5194b57cbae17b7b40ab815dcd49a0
-  languageName: node
-  linkType: hard
-
-"@remix-run/router@npm:1.6.3":
-  version: 1.6.3
-  resolution: "@remix-run/router@npm:1.6.3"
-  checksum: f6968b1626af930b42f8cb5a044f05e4fbce05af6c7947beb1704e45c9570944e3be16ee008b185e5e13baac97948299eb55341b2a359c3e2e54b9d6646ae167
   languageName: node
   linkType: hard
 
@@ -8602,17 +8567,6 @@ __metadata:
   version: 4.7.2
   resolution: "axe-core@npm:4.7.2"
   checksum: 5d86fa0f45213b0e54cbb5d713ce885c4a8fe3a72b92dd915a47aa396d6fd149c4a87fec53aa978511f6d941402256cfeb26f2db35129e370f25a453c688655a
-  languageName: node
-  linkType: hard
-
-"axios@npm:^1.1.3":
-  version: 1.4.0
-  resolution: "axios@npm:1.4.0"
-  dependencies:
-    follow-redirects: ^1.15.0
-    form-data: ^4.0.0
-    proxy-from-env: ^1.1.0
-  checksum: 7fb6a4313bae7f45e89d62c70a800913c303df653f19eafec88e56cea2e3821066b8409bc68be1930ecca80e861c52aa787659df0ffec6ad4d451c7816b9386b
   languageName: node
   linkType: hard
 
@@ -15200,13 +15154,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash-es@npm:^4.17.15":
-  version: 4.17.21
-  resolution: "lodash-es@npm:4.17.21"
-  checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
-  languageName: node
-  linkType: hard
-
 "lodash.debounce@npm:^4.0.8":
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
@@ -15277,7 +15224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.0.1, lodash@npm:^4.17.11, lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:^4.17.11, lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -15499,13 +15446,6 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 8885c6343b71570b0a7ec16cd85a49b853a830234790ee7430e2517ea5d8d361ff138bd52147f650790f3e7b3a28a15c755fc16f8856dd01ddf09a6161782e06
-  languageName: node
-  linkType: hard
-
-"material-colors@npm:^1.2.1":
-  version: 1.2.6
-  resolution: "material-colors@npm:1.2.6"
-  checksum: 72d005ccccb82bab68eef3cd757e802668634fc86976dedb9fc564ce994f2d3258273766b7efecb7404a0031969e2d72201a1b74169763f0a53c0dd8d649209f
   languageName: node
   linkType: hard
 
@@ -15870,13 +15810,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
-  languageName: node
-  linkType: hard
-
-"moment@npm:^2.29.4":
-  version: 2.29.4
-  resolution: "moment@npm:2.29.4"
-  checksum: 0ec3f9c2bcba38dc2451b1daed5daded747f17610b92427bebe1d08d48d8b7bdd8d9197500b072d14e326dd0ccf3e326b9e3d07c5895d3d49e39b6803b76e80e
   languageName: node
   linkType: hard
 
@@ -17281,7 +17214,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.10, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -17985,23 +17918,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-color@npm:^2.19.3":
-  version: 2.19.3
-  resolution: "react-color@npm:2.19.3"
-  dependencies:
-    "@icons/material": ^0.2.4
-    lodash: ^4.17.15
-    lodash-es: ^4.17.15
-    material-colors: ^1.2.1
-    prop-types: ^15.5.10
-    reactcss: ^1.2.0
-    tinycolor2: ^1.4.1
-  peerDependencies:
-    react: "*"
-  checksum: 40b49e1aa2ab27a099cc37a3fa2d5bb906b8def4dbe2d922c0e42365e386d82b03f9b06a2b29a44a51f1e114cef72e61c0ba0740581a128d951936ea4617429b
-  languageName: node
-  linkType: hard
-
 "react-colorful@npm:^5.1.2":
   version: 5.6.1
   resolution: "react-colorful@npm:5.6.1"
@@ -18114,17 +18030,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-moment@npm:^1.1.2":
-  version: 1.1.3
-  resolution: "react-moment@npm:1.1.3"
-  peerDependencies:
-    moment: ^2.29.0
-    prop-types: ^15.7.0
-    react: ^16.0 || ^17.0.0 || ^18.0.0
-  checksum: 542902c42e4250c703f21a6c48b3eef90390b052929117127722c1fcb912ae257278603f0e0a66f97beaafdbff5cb6e85f76f6b9e88a7b6aeb0aaa00be2731af
-  languageName: node
-  linkType: hard
-
 "react-refresh@npm:^0.14.0":
   version: 0.14.0
   resolution: "react-refresh@npm:0.14.0"
@@ -18145,30 +18050,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.4.3":
-  version: 6.12.1
-  resolution: "react-router-dom@npm:6.12.1"
-  dependencies:
-    "@remix-run/router": 1.6.3
-    react-router: 6.12.1
-  peerDependencies:
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: 885528986b6e32bde0cc6ff1f318186ce6931cf4a2a36511fe12eafb380576b448a991d43fe473dbb9bc97bb7efa0c87ac179a7470345a1d3534a34b65578677
-  languageName: node
-  linkType: hard
-
-"react-router@npm:6.12.1":
-  version: 6.12.1
-  resolution: "react-router@npm:6.12.1"
-  dependencies:
-    "@remix-run/router": 1.6.3
-  peerDependencies:
-    react: ">=16.8"
-  checksum: a23a0f2e6635eba19aec8d50b9126f61663d1e6ee6e69d6b2ca6e5dd678496b54d925f0d86a375270646da11cc12be66ac5e6ebf73962957af91ac828b63d10b
-  languageName: node
-  linkType: hard
-
 "react-router@npm:6.22.3":
   version: 6.22.3
   resolution: "react-router@npm:6.22.3"
@@ -18186,15 +18067,6 @@ __metadata:
   dependencies:
     loose-envify: ^1.1.0
   checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
-  languageName: node
-  linkType: hard
-
-"reactcss@npm:^1.2.0":
-  version: 1.2.3
-  resolution: "reactcss@npm:1.2.3"
-  dependencies:
-    lodash: ^4.0.1
-  checksum: c53e386a0881f1477e1cff661f6a6ad4c662230941f3827862193ac30f9b75cdf7bc7b4c7e5ca543d3e4e80fee1a3e9fa0056c206b1c0423726c41773ab3fe45
   languageName: node
   linkType: hard
 
@@ -20219,13 +20091,6 @@ __metadata:
   version: 1.3.3
   resolution: "tiny-invariant@npm:1.3.3"
   checksum: 5e185c8cc2266967984ce3b352a4e57cb89dad5a8abb0dea21468a6ecaa67cd5bb47a3b7a85d08041008644af4f667fb8b6575ba38ba5fb00b3b5068306e59fe
-  languageName: node
-  linkType: hard
-
-"tinycolor2@npm:^1.4.1, tinycolor2@npm:^1.4.2":
-  version: 1.6.0
-  resolution: "tinycolor2@npm:1.6.0"
-  checksum: 6df4d07fceeedc0a878d7bac47e2cd47c1ceeb1078340a9eb8a295bc0651e17c750f73d47b3028d829f30b85c15e0572c0fd4142083e4c21a30a597e47f47230
   languageName: node
   linkType: hard
 

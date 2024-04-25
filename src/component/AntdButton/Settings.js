@@ -17,7 +17,7 @@ const Settings = props => {
       {Select && (
         <div className="flex flex-col w-full px-4 py-2">
           <label>Intent</label>
-          <Select value={intent} onChange={handleChangeIntent} inputClassName="rounded">
+          <Select value={intent} onChange={handleChangeIntent} className="rounded">
             <option value="primary">Primary</option>
             <option value="secondary">Secondary</option>
             <option value="danger">Danger</option>

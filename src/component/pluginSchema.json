@@ -1,13 +1,14 @@
 {
-  "demo": {
+  "antdThemeProvider": {
     "attributes": {},
     "definition": {
-      "label": "Demo",
-      "type": "demo",
+      "label": "Antd Theme Provider",
+      "type": "antdThemeProvider",
       "bindings": {},
       "styleSelectors": {
         "base": ""
-      }
+      },
+      "items": []
     },
     "builder": {
       "canDelete": true,
@@ -19,7 +20,7 @@
       "itemsNotAllowed": []
     },
     "bindingsAllowed": {
-      "attributes": [{ "path": "content", "label": "Content" }],
+      "attributes": [{ "path": "settings", "label": "Settings" }],
       "style": [],
       "initialState": [
         { "path": "visibility", "label": "Visibility" },
@@ -27,42 +28,7 @@
       ]
     },
     "defaultStyle": {
-      "name": "Demo",
-      "displayMode": "desktop",
-      "style": {
-        "base": {}
-      }
-    }
-  },
-  "demoChild": {
-    "attributes": {},
-    "definition": {
-      "label": "Demo Child",
-      "type": "demoChild",
-      "bindings": {},
-      "styleSelectors": {
-        "base": ""
-      }
-    },
-    "builder": {
-      "canDelete": true,
-      "canSelect": true,
-      "canDragDrop": true,
-      "canMove": true,
-      "canTemplate": true,
-      "itemsAllowed": [],
-      "itemsNotAllowed": []
-    },
-    "bindingsAllowed": {
-      "attributes": [{ "path": "content", "label": "Content" }],
-      "style": [],
-      "initialState": [
-        { "path": "visibility", "label": "Visibility" },
-        { "path": "styleSelectors.base", "label": "Selector - Base" }
-      ]
-    },
-    "defaultStyle": {
-      "name": "Demo Child",
+      "name": "Antd Theme Provider",
       "displayMode": "desktop",
       "style": {
         "base": {}

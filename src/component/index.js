@@ -1,14 +1,13 @@
 // Relatives
-import Demo from './Demo';
-import DemoChild from './DemoChild';
+import AntdThemeProvider from './AntdThemeProvider';
 import Settings from './Settings';
 
-Demo.type = 'demo';
-Demo.pluginSettings = Settings;
-Demo.version = VERSION;
+AntdThemeProvider.type = 'antdThemeProvider';
+AntdThemeProvider.pluginSettings = Settings;
+AntdThemeProvider.version = VERSION;
 
-export const plugins = { demoChild: DemoChild };
+export const plugins = {};
 
 export const version = VERSION;
 
-export default Demo;
+export default AntdThemeProvider;

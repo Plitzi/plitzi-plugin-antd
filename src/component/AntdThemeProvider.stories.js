@@ -1,15 +1,16 @@
 // Packages
 import React, { useRef, useState } from 'react';
+import noop from 'lodash/noop';
 import PlitziSdk, { PlitziServiceProvider } from '@plitzi/plitzi-sdk';
 
 // Relatives
-import Demo from './Demo';
+import AntdThemeProvider from './AntdThemeProvider';
 import Settings from './Settings';
 
 export default {
-  title: 'Example/Demo',
+  title: 'Example/AntdThemeProvider',
   decorators: [],
-  component: Demo,
+  component: AntdThemeProvider,
   argTypes: {}
 };
 
@@ -44,8 +45,8 @@ const schema = {
         content: 'Testing'
       },
       definition: {
-        label: 'Demo',
-        type: 'demo',
+        label: 'AntdThemeProvider',
+        type: 'antdThemeProvider',
         description: '',
         parentId: '5f544375ced80ed16f382b7b',
         styleSelectors: {
@@ -60,8 +61,8 @@ const schema = {
 export const WithHoc = () => (
   <PlitziSdk offlineMode offlineData={{ schema }}>
     <PlitziSdk.Plugin
-      renderType="demo"
-      component={Demo}
+      renderType="antdThemeProvider"
+      component={AntdThemeProvider}
       assets={[
         {
           type: 'text/css',
@@ -76,8 +77,8 @@ export const WithHoc = () => (
 export const WithHocNoPreview = () => (
   <PlitziSdk offlineMode offlineData={{ schema }} previewMode={false}>
     <PlitziSdk.Plugin
-      renderType="demo"
-      component={Demo}
+      renderType="antdThemeProvider"
+      component={AntdThemeProvider}
       assets={[
         {
           type: 'text/css',
@@ -91,7 +92,7 @@ export const WithHocNoPreview = () => (
 
 export const WithHocNoIframe = () => (
   <PlitziSdk offlineMode renderMode="raw" offlineData={{ schema }}>
-    <PlitziSdk.Plugin renderType="demo" component={Demo} />
+    <PlitziSdk.Plugin renderType="antdThemeProvider" component={AntdThemeProvider} />
   </PlitziSdk>
 );
 
@@ -101,16 +102,20 @@ export const ComponentRender = () => {
   return (
     <PlitziServiceProvider
       value={{
-        settings: { previewMode: true }
+        settings: { previewMode: true },
+        utils: {}
       }}
     >
-      <Demo ref={ref} />
+      <AntdThemeProvider ref={ref} />
     </PlitziServiceProvider>
   );
 };
 
 ComponentRender.args = {
-  ...Demo.defaultProps
+  className: '',
+  children: undefined,
+  internalProps: {},
+  theme: {}
 };
 
 export const ComponentSettings = args => {
@@ -124,5 +129,6 @@ export const ComponentSettings = args => {
 };
 
 ComponentSettings.args = {
-  ...Settings.defaultProps
+  theme: '',
+  onUpdate: noop
 };
